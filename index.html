@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sarfam Buildcon - Reports</title>
+  <title>Full Page Google Sheets Chart</title>
   <style>
     html, body {
-      margin: 0;
-      padding: 0;
       height: 100%;
+      margin: 0;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: #004080;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
     }
     iframe {
-      width: 100%;
-      height: 100%;
+      flex: 1;
       border: none;
+      width: 100%;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>My Chart Dashboard</h1>
+  </header>
   <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vScl_k_rcg23ksEq4MmKUKzRL-MInWQfsBJ9KNUh9rkehx5fukSHL6jDYAymRoS0UrVnUaj91KWpHv1/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 </body>
 </html>
-
