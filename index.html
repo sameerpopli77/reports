@@ -1,45 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dashboard - Multiple Charts</title>
+  <title>My Responsive Charts</title>
   <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-    }
     body {
-      display: flex;
-      flex-direction: column;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      padding: 40px;
     }
-    header {
-      background: #004080;
-      color: #fff;
-      padding: 20px;
+
+    h1 {
       text-align: center;
+      color: #333;
+      margin-bottom: 40px;
     }
-    main {
-      display: flex;
-      flex-direction: column;
-      flex: 1;
+
+    .charts {
+      display: grid;
+      grid-template-columns: 1fr; /* mobile: 1 column */
+      gap: 40px; /* space between charts */
+      max-width: 1200px;
+      margin: 0 auto;
     }
+
     iframe {
-      flex: 1;
       width: 100%;
-      border: none;
+      height: 500px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #fff;
     }
-    .chart {
-      flex: 1;
-      min-height: 400px; /* control each chart height */
+
+    /* When screen is wider than 768px, switch to 2 columns */
+    @media (min-width: 768px) {
+      .charts {
+        grid-template-columns: 1fr 1fr; /* 2 columns */
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>My Charts Dashboard</h1>
-  </header>
-  <main>
-    <iframe class="chart" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vScl_k_rcg23ksEq4MmKUKzRL-MInWQfsBJ9KNUh9rkehx5fukSHL6jDYAymRoS0UrVnUaj91KWpHv1/pubchart?oid=223011665&amp;format=interactive"></iframe>
-    <iframe class="chart" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vScl_k_rcg23ksEq4MmKUKzRL-MInWQfsBJ9KNUh9rkehx5fukSHL6jDYAymRoS0UrVnUaj91KWpHv1/pubchart?oid=1292832411&amp;format=interactive"></iframe>
-  </main>
+
+  <h1>My Embedded Charts</h1>
+
+  <div class="charts">
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vScl_k_rcg23ksEq4MmKUKzRL-MInWQfsBJ9KNUh9rkehx5fukSHL6jDYAymRoS0UrVnUaj91KWpHv1/pubchart?oid=223011665&amp;format=interactive"></iframe>
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vScl_k_rcg23ksEq4MmKUKzRL-MInWQfsBJ9KNUh9rkehx5fukSHL6jDYAymRoS0UrVnUaj91KWpHv1/pubchart?oid=1292832411&amp;format=interactive"></iframe>
+    <!-- Add more charts as needed: -->
+    <!-- <iframe src="YOUR_THIRD_PUBCHART_URL"></iframe> -->
+    <!-- <iframe src="YOUR_FOURTH_PUBCHART_URL"></iframe> -->
+  </div>
+
 </body>
 </html>
