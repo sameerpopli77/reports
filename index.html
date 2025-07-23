@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
   <title>My Looker Studio Dashboard</title>
   <style>
     body {
@@ -10,16 +11,23 @@
       background: #f8f8f8;
     }
 
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
     .report-container {
       position: relative;
       width: 100%;
-      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      padding-bottom: 300%; /* Aspect ratio based on your tall canvas */
       height: 0;
       overflow: hidden;
       border: 1px solid #ccc;
       border-radius: 8px;
       max-width: 1200px;
       margin: 0 auto;
+      background: #fff;
     }
 
     .report-container iframe {
@@ -34,10 +42,13 @@
 </head>
 <body>
 
-  <h1 style="text-align: center;">My Looker Studio Dashboard</h1>
+  <h1>My Looker Studio Dashboard</h1>
 
   <div class="report-container">
-    <iframe src="https://lookerstudio.google.com/embed/reporting/63abe044-6425-4988-a189-a2ebceb6ec63/page/6fLSF" allowfullscreen></iframe>
+    <iframe
+      src="https://lookerstudio.google.com/embed/reporting/63abe044-6425-4988-a189-a2ebceb6ec63/page/6fLSF"
+      allowfullscreen>
+    </iframe>
   </div>
 
 </body>
