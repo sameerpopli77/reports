@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Full Page Google Sheets Chart</title>
+  <title>Dashboard - Multiple Charts</title>
   <style>
     html, body {
       height: 100%;
@@ -17,17 +17,29 @@
       padding: 20px;
       text-align: center;
     }
+    main {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
     iframe {
       flex: 1;
-      border: none;
       width: 100%;
+      border: none;
+    }
+    .chart {
+      flex: 1;
+      min-height: 400px; /* control each chart height */
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>My Chart Dashboard</h1>
+    <h1>My Charts Dashboard</h1>
   </header>
-  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vScl_k_rcg23ksEq4MmKUKzRL-MInWQfsBJ9KNUh9rkehx5fukSHL6jDYAymRoS0UrVnUaj91KWpHv1/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+  <main>
+    <iframe class="chart" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vScl_k_rcg23ksEq4MmKUKzRL-MInWQfsBJ9KNUh9rkehx5fukSHL6jDYAymRoS0UrVnUaj91KWpHv1/pubchart?oid=223011665&amp;format=interactive"></iframe>
+    <iframe class="chart" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vScl_k_rcg23ksEq4MmKUKzRL-MInWQfsBJ9KNUh9rkehx5fukSHL6jDYAymRoS0UrVnUaj91KWpHv1/pubchart?oid=1292832411&amp;format=interactive"></iframe>
+  </main>
 </body>
 </html>
