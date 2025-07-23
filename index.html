@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>My Looker Studio Dashboard</title>
+  <title>Sarfam Buildcon - Stock Report - Mira Road</title>
   <style>
     body {
       margin: 0;
@@ -14,13 +14,26 @@
     h1 {
       text-align: center;
       color: #333;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
+    }
+
+    .banner {
+      background-color: #d32f2f; /* deep red */
+      color: #fff; /* white text */
+      text-align: center;
+      padding: 15px 20px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-radius: 8px;
+      max-width: 800px;
+      margin: 0 auto 40px auto;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
 
     .report-container {
       position: relative;
       width: 100%;
-      padding-bottom: 300%; /* Aspect ratio based on your tall canvas */
+      padding-bottom: 300%; /* adjust for your Looker canvas aspect ratio */
       height: 0;
       overflow: hidden;
       border: 1px solid #ccc;
@@ -42,7 +55,11 @@
 </head>
 <body>
 
-  <h1>My Looker Studio Dashboard</h1>
+  <h1>Sarfam Buildcon: Stock Report - Mira Road</h1>
+
+  <div class="banner">
+    For stock below the RED threshold line, ORDER NOW!
+  </div>
 
   <div class="report-container">
     <iframe
