@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+    .container {
+      text-align: center;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Complete Your Payment</h1>
+
+    <a href="#" class="uropay-btn" 
+      data-uropay-api-key="PSPKV7WRR5MJ3IRW5IN9HM4JDWWU327I" 
+      data-uropay-button-id="PAPA557701" 
+      data-uropay-environment="LIVE" 
+      data-uropay-amount="11" 
+      data-uropay-success-redirect-url="https://thesmartchoice.co.in" 
+      data-uropay-failure-redirect-url="https://thesmartchoice-v5e.caffeine.xyz/stream-clarity-index">
+      Buy Now for ₹11
+    </a>
+  </div>
+
+  <script src="https://cdn.uropay.me/uropay-embed.min.js"></script>
+
+</body>
+</html>
